@@ -1,0 +1,35 @@
+{
+    "post": [
+        {
+            "id": 1,
+            "title": "Introduction to JSON",
+            "body": "JSON stands for JavaScript Object Notation. It is a lightweight data format used for storing and exchanging data."
+        },
+        {
+            "id": 2,
+            "title": "Working with Arrays",
+            "body": "JSON arrays are used to store multiple values in a single variable. Each element can be an object, array, string, number, or boolean."
+        },
+        {
+            "id": 3,
+            "title": "Understanding Objects",
+            "body": "JSON objects are collections of key-value pairs. Each key is a string, and values can be any valid JSON type."
+        },
+        {
+            "id": 4,
+            "title": "Common Use Cases",
+            "body": "JSON is commonly used for APIs, configuration files, and data storage in web and mobile applications."
+        },
+        {
+            "id": 5,
+            "title": "Parsing and Stringifying",
+            "body": "In JavaScript, you can convert JSON strings into objects using JSON.parse() and convert objects back into JSON using JSON.stringify()."
+        }
+    ],
+    "todos": [
+        {
+            "id": 1,
+            "title": "Introduction to JSON"
+        }
+    ]
+}
