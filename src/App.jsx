@@ -4,6 +4,7 @@ import Home from "./pages/Home"
 import PostRQ from "./components/PostRQ"
 import './App.css';
 import PostDetails from "./pages/PostDetails";
+import PaginatedQueries from "./components/PaginatedQueries";
 
 
 function App() {
@@ -24,6 +25,9 @@ function App() {
               <li>
                 <Link to="/rq-posts">RQ Posts</Link>
               </li>
+              <li>
+                <Link to="/paginated-fruits">Fruits</Link>
+              </li>
             </ul>
           </nav>
           <Routes>
@@ -31,6 +35,7 @@ function App() {
             <Route exact path='/posts' element={<PostsTraditional />} />
             <Route exact path='/posts/:postId' element={<PostDetails />} />
             <Route exact path='/rq-posts' element={<PostRQ />} />
+            <Route path="/paginated-fruits" element={<PaginatedQueries/>}></Route>
 
           </Routes>
         </div>
