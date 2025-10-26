@@ -1,29 +1,19 @@
 {
-    "post": [
+     "posts": [
         {
-            "id": 1,
-            "title": "Introduction to JSON 3",
-            "body": "JSON stands for JavaScript Object Notation. It is a lightweight data format used for storing and exchanging data."
+            "id": "1",
+            "title": "Elon Musk Interview",
+            "body": "Discussing Mars mission"
         },
         {
-            "id": 2,
-            "title": "Working with Arrays",
-            "body": "JSON arrays are used to store multiple values in a single variable. Each element can be an object, array, string, number, or boolean."
+            "id": "2",
+            "title": "Marques Reviews Tesla",
+            "body": "Tesla's latest EV review"
         },
         {
-            "id": 3,
-            "title": "Understanding Objects",
-            "body": "JSON objects are collections of key-value pairs. Each key is a string, and values can be any valid JSON type."
-        },
-        {
-            "id": 4,
-            "title": "Common Use Cases",
-            "body": "JSON is commonly used for APIs, configuration files, and data storage in web and mobile applications."
-        },
-        {
-            "id": 5,
-            "title": "Parsing and Stringifying",
-            "body": "In JavaScript, you can convert JSON strings into objects using JSON.parse() and convert objects back into JSON using JSON.stringify()."
+            "id": "3",
+            "title": "AI in 2024",
+            "body": "Impact on daily life"
         }
     ],
     "todos": [

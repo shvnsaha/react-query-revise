@@ -3,6 +3,7 @@ import PostsTraditional from "./components/PostsTraditional"
 import Home from "./pages/Home"
 import PostRQ from "./components/PostRQ"
 import './App.css';
+import PostDetails from "./pages/PostDetails";
 
 
 function App() {
@@ -28,7 +29,7 @@ function App() {
           <Routes>
             <Route exact path='/' element={<Home />} />
             <Route exact path='/posts' element={<PostsTraditional />} />
-            {/* <Route exact path='/posts/:postId' element={<PostDetails />} /> */}
+            <Route exact path='/posts/:postId' element={<PostDetails />} />
             <Route exact path='/rq-posts' element={<PostRQ />} />
 
           </Routes>

@@ -1,21 +1,22 @@
 import React from 'react';
 import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 const PostRQ = () => {
 
-    const { data, isLoading, isError, error ,isFetching,refetch} = useQuery({
+    const { data, isLoading, isError, error, isFetching, refetch } = useQuery({
         queryKey: ['posts'],
         queryFn: () => {
-            return axios.get('http://localhost:4000/post');
+            return axios.get('http://localhost:4000/posts');
         },
         // staleTime: 30000,
         // refetchInterval: 1000,
         // refetchIntervalInBackground: true,
-        enabled: false
+        enabled: true
     })
 
-    console.log(isLoading,isFetching);
+    // console.log(isLoading, isFetching);
 
     if (isLoading) {
         return <div>Page is Loading</div>
@@ -31,10 +32,12 @@ const PostRQ = () => {
             <button onClick={refetch}>Fetch Post</button>
             {
                 data?.data.map(post => (
-                    <div className="post-item" key={post.id}>
-                        <h3 className="post-title">{post.title}</h3>
-                        <p className="post-body">{post.body}</p>
-                    </div>
+                    <Link to={`/posts/${post.id}`}>
+                        <div className="post-item" key={post.id}>
+                            <h3 className="post-title">{post.title}</h3>
+                            <p className="post-body">{post.body}</p>
+                        </div>
+                    </Link>
                 ))
             }
         </div>
