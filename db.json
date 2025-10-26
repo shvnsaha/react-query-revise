@@ -17,85 +17,126 @@
         }
     ],
     "fruits": [
-        {
-            "id": "1",
-            "name": "Apple"
-        },
-        {
-            "id": "2",
-            "name": "Banana"
-        },
-        {
-            "id": "3",
-            "name": "Orange"
-        },
-        {
-            "id": "4",
-            "name": "Strawberry"
-        },
-        {
-            "id": "5",
-            "name": "Mango"
-        },
-        {
-            "id": "6",
-            "name": "Pineapple"
-        },
-        {
-            "id": "7",
-            "name": "Grapes"
-        },
-        {
-            "id": "8",
-            "name": "Watermelon"
-        },
-        {
-            "id": "9",
-            "name": "Blueberry"
-        },
-        {
-            "id": "10",
-            "name": "Cherry"
-        },
-        {
-            "id": "11",
-            "name": "Peach"
-        },
-        {
-            "id": "12",
-            "name": "Plum"
-        },
-        {
-            "id": "13",
-            "name": "Kiwi"
-        },
-        {
-            "id": "14",
-            "name": "Papaya"
-        },
-        {
-            "id": "15",
-            "name": "Pomegranate"
-        },
-        {
-            "id": "16",
-            "name": "Lemon"
-        },
-        {
-            "id": "17",
-            "name": "Coconut"
-        },
-        {
-            "id": "18",
-            "name": "Pear"
-        },
-        {
-            "id": "19",
-            "name": "Guava"
-        },
-        {
-            "id": "20",
-            "name": "Lychee"
-        }
-    ]
+    { "id": "1", "name": "Apple" },
+    { "id": "2", "name": "Banana" },
+    { "id": "3", "name": "Orange" },
+    { "id": "4", "name": "Strawberry" },
+    { "id": "5", "name": "Mango" },
+    { "id": "6", "name": "Pineapple" },
+    { "id": "7", "name": "Grapes" },
+    { "id": "8", "name": "Watermelon" },
+    { "id": "9", "name": "Blueberry" },
+    { "id": "10", "name": "Cherry" },
+    { "id": "11", "name": "Peach" },
+    { "id": "12", "name": "Plum" },
+    { "id": "13", "name": "Kiwi" },
+    { "id": "14", "name": "Papaya" },
+    { "id": "15", "name": "Pomegranate" },
+    { "id": "16", "name": "Lemon" },
+    { "id": "17", "name": "Coconut" },
+    { "id": "18", "name": "Pear" },
+    { "id": "19", "name": "Guava" },
+    { "id": "20", "name": "Lychee" },
+    { "id": "21", "name": "Raspberry" },
+    { "id": "22", "name": "Blackberry" },
+    { "id": "23", "name": "Cantaloupe" },
+    { "id": "24", "name": "Dragon Fruit" },
+    { "id": "25", "name": "Fig" },
+    { "id": "26", "name": "Jackfruit" },
+    { "id": "27", "name": "Tangerine" },
+    { "id": "28", "name": "Cranberry" },
+    { "id": "29", "name": "Passion Fruit" },
+    { "id": "30", "name": "Mulberry" },
+    { "id": "31", "name": "Starfruit" },
+    { "id": "32", "name": "Durian" },
+    { "id": "33", "name": "Apricot" },
+    { "id": "34", "name": "Persimmon" },
+    { "id": "35", "name": "Clementine" },
+    { "id": "36", "name": "Mandarin" },
+    { "id": "37", "name": "Tamarind" },
+    { "id": "38", "name": "Sapodilla" },
+    { "id": "39", "name": "Gooseberry" },
+    { "id": "40", "name": "Date" },
+    { "id": "41", "name": "Boysenberry" },
+    { "id": "42", "name": "Honeydew" },
+    { "id": "43", "name": "Cucumber" },
+    { "id": "44", "name": "Olive" },
+    { "id": "45", "name": "Quince" },
+    { "id": "46", "name": "Rambutan" },
+    { "id": "47", "name": "Soursop" },
+    { "id": "48", "name": "Longan" },
+    { "id": "49", "name": "Currant" },
+    { "id": "50", "name": "Nectarine" },
+    { "id": "51", "name": "Breadfruit" },
+    { "id": "52", "name": "Custard Apple" },
+    { "id": "53", "name": "Jujube" },
+    { "id": "54", "name": "Carambola" },
+    { "id": "55", "name": "Bilberry" },
+    { "id": "56", "name": "Cloudberry" },
+    { "id": "57", "name": "Huckleberry" },
+    { "id": "58", "name": "Miracle Fruit" },
+    { "id": "59", "name": "Salak" },
+    { "id": "60", "name": "Loquat" },
+    { "id": "61", "name": "Marionberry" },
+    { "id": "62", "name": "Elderberry" },
+    { "id": "63", "name": "Medlar" },
+    { "id": "64", "name": "Ackee" },
+    { "id": "65", "name": "Camu Camu" },
+    { "id": "66", "name": "Feijoa" },
+    { "id": "67", "name": "Ugli Fruit" },
+    { "id": "68", "name": "Santol" },
+    { "id": "69", "name": "Buddha’s Hand" },
+    { "id": "70", "name": "Lucuma" },
+    { "id": "71", "name": "Mangosteen" },
+    { "id": "72", "name": "Langsat" },
+    { "id": "73", "name": "Bael" },
+    { "id": "74", "name": "Rose Apple" },
+    { "id": "75", "name": "Horned Melon" },
+    { "id": "76", "name": "Black Sapote" },
+    { "id": "77", "name": "White Sapote" },
+    { "id": "78", "name": "Plantain" },
+    { "id": "79", "name": "Mulberry Fig" },
+    { "id": "80", "name": "Prickly Pear" },
+    { "id": "81", "name": "Yumberry" },
+    { "id": "82", "name": "Saskatoon Berry" },
+    { "id": "83", "name": "Sea Buckthorn" },
+    { "id": "84", "name": "Surinam Cherry" },
+    { "id": "85", "name": "Monkey Orange" },
+    { "id": "86", "name": "Desert Lime" },
+    { "id": "87", "name": "Finger Lime" },
+    { "id": "88", "name": "Kaffir Lime" },
+    { "id": "89", "name": "Key Lime" },
+    { "id": "90", "name": "Ambarella" },
+    { "id": "91", "name": "Ceylon Gooseberry" },
+    { "id": "92", "name": "Imbu" },
+    { "id": "93", "name": "Mamoncillo" },
+    { "id": "94", "name": "Mamey Sapote" },
+    { "id": "95", "name": "Nance" },
+    { "id": "96", "name": "Pawpaw" },
+    { "id": "97", "name": "Pulasan" },
+    { "id": "98", "name": "Red Mombin" },
+    { "id": "99", "name": "Salmonberry" },
+    { "id": "100", "name": "Soncoya" },
+    { "id": "101", "name": "Sugar Apple" },
+    { "id": "102", "name": "Velvet Apple" },
+    { "id": "103", "name": "Wax Jambu" },
+    { "id": "104", "name": "White Currant" },
+    { "id": "105", "name": "Yellow Passion Fruit" },
+    { "id": "106", "name": "Ziziphus Fruit" },
+    { "id": "107", "name": "Blackcurrant" },
+    { "id": "108", "name": "Red Currant" },
+    { "id": "109", "name": "Goji Berry" },
+    { "id": "110", "name": "Barberry" },
+    { "id": "111", "name": "Chico Fruit" },
+    { "id": "112", "name": "Pitanga" },
+    { "id": "113", "name": "Kumquat" },
+    { "id": "114", "name": "Calamansi" },
+    { "id": "115", "name": "Pomelo" },
+    { "id": "116", "name": "Yuzu" },
+    { "id": "117", "name": "Cupuacu" },
+    { "id": "118", "name": "Jabuticaba" },
+    { "id": "119", "name": "Langka" },
+    { "id": "120", "name": "Baobab Fruit" }
+]
+
 }

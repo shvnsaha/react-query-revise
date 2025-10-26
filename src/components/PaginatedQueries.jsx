@@ -1,20 +1,27 @@
-import { useQuery } from '@tanstack/react-query';
+import { useInfiniteQuery } from '@tanstack/react-query';
 import axios from 'axios';
-import { useState } from 'react';
 
-const fetchFruits = async (pageId) => {
-    
-    return axios.get(`http://localhost:4000/fruits?_page=${pageId}&_limit=4`)
+
+const fetchFruits = async ({ pageParam }) => {
+    return axios.get(`http://localhost:4000/fruits/?_limit=20&_page=${pageParam}`)
 }
 
 
 const PaginatedQueries = () => {
 
-    const [page, setPage] = useState(2)
 
-    const { data, isLoading, isError, error } = useQuery({
-        queryKey: ['fruits',page],
-        queryFn: () => fetchFruits(page),
+
+    const { data, isLoading, isError, error,fetchNextPage,hasNextPage } = useInfiniteQuery({
+        queryKey: ['fruits'],
+        queryFn: fetchFruits,
+        initialPageParam: 1,
+        getNextPageParam: (_lastPage, allPages) => {
+            if (allPages.length < 6) return allPages.length + 1;
+            else {
+                return undefined;
+            }
+        }
+
         // staleTime: 30000,
         // refetchInterval: 1000,
         // refetchIntervalInBackground: true,
@@ -31,19 +38,24 @@ const PaginatedQueries = () => {
     }
 
 
-    console.log(data?.data);
+    console.log(data);
 
     return (
         <div className='container'>
             {
-                data?.data.map(fruit =>
-                    <div className='fruit-label'>
-                        {fruit.name}
-                    </div>
-                )
+                data?.pages?.map(page =>{
+                    return page?.data.map(fruit => {
+                        return (
+                            <div key={fruit.id} className='fruit-item'>
+                                {fruit.name}
+                            </div>
+                        )
+                    })
+                })
             }
-            <button onClick={() => setPage(prev => prev - 1)} disabled={page == 0 ? true : false}>Prev</button>
-            <button onClick={() => setPage(prev => prev + 1)} disabled={page == 5 ? true : false}>Next</button>
+
+            <button onClick={()=>fetchNextPage()} disabled={!hasNextPage}>Load More</button>
+
         </div>
     );
 };
