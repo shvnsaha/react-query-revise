@@ -2,7 +2,7 @@
     "post": [
         {
             "id": 1,
-            "title": "Introduction to JSON",
+            "title": "Introduction to JSON 3",
             "body": "JSON stands for JavaScript Object Notation. It is a lightweight data format used for storing and exchanging data."
         },
         {

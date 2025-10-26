@@ -4,12 +4,14 @@ import axios from 'axios';
 
 const PostRQ = () => {
 
-    const { data, isLoading, isError, error } = useQuery({
+    const { data, isLoading, isError, error ,isFetching} = useQuery({
         queryKey: ['posts'],
         queryFn: () => {
             return axios.get('http://localhost:4000/post');
         }
     })
+
+    console.log(isLoading,isFetching);
 
     if (isLoading) {
         return <div>Page is Loading</div>
@@ -18,7 +20,7 @@ const PostRQ = () => {
         return <div>{error.message} </div>
     }
 
-    console.log(data);
+    // console.log(data);
 
     return (
         <div className="post-list">
